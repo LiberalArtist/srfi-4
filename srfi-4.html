@@ -70,28 +70,28 @@ be called integer vectors):
 <TR>
 <TD><TD><STRONG>datatype</STRONG> <TD><STRONG>type of elements</STRONG>
 </TR>
-<TR>
+<TR id="s8vector">
 <TD><TD><code>s8vector</code> <TD>signed exact integer in the range -(2^7) to (2^7)-1
 </TR>
-<TR>
+<TR id="u8vector">
 <TD><TD><code>u8vector</code> <TD>unsigned exact integer in the range 0 to (2^8)-1
 </TR>
-<TR>
+<TR id="s16vector">
 <TD><TD><code>s16vector</code><TD>signed exact integer in the range -(2^15) to (2^15)-1
 </TR>
-<TR>
+<TR id="u16vector">
 <TD><TD><code>u16vector</code><TD>unsigned exact integer in the range 0 to (2^16)-1
 </TR>
-<TR>
+<TR id="s32vector">
 <TD><TD><code>s32vector</code><TD>signed exact integer in the range -(2^31) to (2^31)-1
 </TR>
-<TR>
+<TR id="u32vector">
 <TD><TD><code>u32vector</code><TD>unsigned exact integer in the range 0 to (2^32)-1
 </TR>
-<TR>
+<TR id="s64vector">
 <TD><TD><code>s64vector</code><TD>signed exact integer in the range -(2^63) to (2^63)-1
 </TR>
-<TR>
+<TR id=="u64vector">
 <TD><TD><code>u64vector</code><TD>unsigned exact integer in the range 0 to (2^64)-1
 </TR>
 </TABLE>
@@ -105,10 +105,10 @@ be called float vectors):
 <TR>
 <TD><TD><STRONG>datatype</STRONG> <TD><STRONG>type of elements</STRONG>
 </TR>
-<TR>
+<TR id="f32vector">
 <TD><TD><code>f32vector</code> <TD>inexact real
 </TR>
-<TR>
+<TR id="f64vector">
 <TD><TD><code>f64vector</code> <TD>inexact real
 </TR>
 </TABLE>
@@ -187,7 +187,7 @@ must be quoted just like heterogeneous vectors must be.  Homogeneous
 vectors can appear in quasiquotations but must not contain
 <code>unquote</code> or <code>unquote-splicing</code> forms
 (i.e. <code>`(,x #u8(1 2))</code> is legal but <code>`#u8(1 ,x
-2)</code> is not).  This restriction is to accomodate the many Scheme
+2)</code> is not).  This restriction is to accommodate the many Scheme
 systems that use the <code>read</code> procedure to parse programs.
 
 	<p></p>
